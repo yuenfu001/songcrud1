@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "songcrud"
+version = "0.1.0"
+description = "this is a zuri project"
+authors = ["yuenfu001 <liuyuenfu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
