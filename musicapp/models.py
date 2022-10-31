@@ -7,7 +7,7 @@ class Artiste(models.Model):
     last_name = models.CharField(max_length=30,  help_text = "enter your surname here(i.e your father's name)")
     age = models.PositiveIntegerField(help_text = "Enter your age in whole number")
     def __str__(self):
-        return f"{self.id} {self.first_name} {self.last_name} {self.age}"
+        return f"{self.first_name} {self.last_name} "
 
     class Meta:
         verbose_name = "Artiste"
@@ -23,7 +23,7 @@ class Song(models.Model):
     # lyrics = models.ManyToManyField("Lyrics", help_text = "Enter Lyrics here")
 
     def __str__(self):
-        return f"{self.id} {self.title}"
+        return f"{self.title}"
       
 
 class Lyrics(models.Model):

@@ -5,7 +5,7 @@ class ArtisteAdmin(admin.ModelAdmin):
     list_display = ['first_name',"last_name",'age','id']
 
 class SongAdmin(admin.ModelAdmin):
-    list_display = ['title',"artiste",'date_released','likes']
+    list_display = ['title',"artiste",'date_released','likes','id']
 
 class LyricsAdmin(admin.ModelAdmin):
     list_display = ['content',"song_id"]
