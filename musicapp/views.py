@@ -36,7 +36,7 @@ def uniqueArtist(request, pk):
         return Response(serializer.data)
     
     elif request.method == "PUT":
-        serializer = ArtisteSerializer(data=request.data)
+        serializer = ArtisteSerializer(artist, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -76,7 +76,7 @@ def uniqueSong(request, pk):
         return Response(serializer.data)
     
     elif request.method == "PUT":
-        serializer = SongSerializer(data=request.data)
+        serializer = SongSerializer(songs, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -118,7 +118,7 @@ def uniqueLyrics(request, pk):
         return Response(serializer.data)
     
     elif request.method == "PUT":
-        serializer = LyricSerializer(data=request.data)
+        serializer = LyricSerializer(lyrics, data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

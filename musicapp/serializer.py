@@ -15,6 +15,13 @@ class SongSerializer(serializers.ModelSerializer):
         fields = ['id', 'title', 'artiste',"date_released", "likes"]
         # the fields contains each variable you create in ur model.py class
 
+# class SongPutSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Song # this is the model class in your models.py file
+#         fields = ['title', "date_released"]
+#         # the fields contains each variable you create in ur model.py class
+        
+
 class LyricSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lyrics
