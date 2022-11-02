@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-zm-gk)x41pbwpzsu49ixq5f9ipio)9=m+())bv+bi#$a@0b+y2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = "False"
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "songcrud-1.herokuapp.com"]
 
 
 # Application definition
